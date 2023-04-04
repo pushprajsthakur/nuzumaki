@@ -1,0 +1,60 @@
+<template>
+    <lightning-card title="calling child method from parent">
+        <div class="slds-var-m-around_medium">
+           
+
+    <!-- <template for:each={sliderData} for:item="item" >
+        <lightning-slider
+        class="new" key={item.serial} label="Volume" value={item.val} onchange={changeHandler}></lightning-slider>
+    </template> -->
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col">
+            <lightning-slider name="newlist1" class="slidercls"
+            label="Volume" value={value1} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+       <lightning-slider name="newlist2" class="slidercls"
+        label="Volume" value={value2} onchange={changeHandler} disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+        <lightning-slider name="newlist3" class="slidercls"
+        label="Volume" value={value3} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+        <lightning-slider name="newlist4" class="slidercls"
+        label="Volume" value={value4} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+        <lightning-slider name="newlist5" class="slidercls"
+        label="Volume" value={value5} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+        <lightning-slider name="newlist6" class="slidercls"
+        label="Volume" value={value6} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+        </div>
+        <div class="slds-col">
+            <lightning-slider name="newlist7" class="slidercls"
+            label="Volume" value={value7} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+            <lightning-slider name="newlist8" class="slidercls"
+            label="Volume" value={value8} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10' ></lightning-slider>
+            <lightning-slider name="newlist9" class="slidercls"
+            label="Volume" value={value9} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+            <lightning-slider name="newlist10" class="slidercls"
+            label="Volume" value={value10} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+            <lightning-slider name="newlist11" class="slidercls"
+            label="Volume" value={value11} onchange={changeHandler}  disabled={inputReadOnly} min='0' max='10'></lightning-slider>
+        
+        </div>
+      </div>
+     
+    
+
+   
+    <div data-id="myDiv" class={currentcolor}>
+        Total:{sum}<strong>/110</strong>
+        <p>Pitch Level:<strong>{currentPitchLevel}</strong></p>
+        <p>Pitch Message:<strong>{currentPitch}</strong></p>
+       
+    </div>
+  
+   
+<div class="slds-var-p-around_medium">
+    <lightning-button label="Lock Button" onclick={handleButtonClick}></lightning-button>
+</div>
+</div>
+     
+    </lightning-card>   
+
+   
+    
+</template>

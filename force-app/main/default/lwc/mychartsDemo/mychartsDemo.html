@@ -1,0 +1,34 @@
+<template>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="6" padding="around-small">
+
+            <lightning-card title="events for user pie-chart">
+                <template if:true={pieChartLabels.length}>
+                    <c-mycharts
+                    type="doughnut"
+                    chart-heading="Events"
+                    chart-data={pieChartData}
+                    chart-labels={pieChartLabels}
+                    ></c-mycharts>
+                </template>
+                
+            </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" padding="around-small">
+
+            <lightning-card title="events for user bar-chart">
+                <template if:true={pieChartLabels.length}>
+                    <c-mycharts
+                    type="bar"
+                    chart-heading="Events"
+                    chart-data={pieChartData}
+                    chart-labels={pieChartLabels}
+                    ></c-mycharts>
+                </template>
+                
+            </lightning-card>
+        </lightning-layout-item>
+       
+    </lightning-layout>
+    
+</template>

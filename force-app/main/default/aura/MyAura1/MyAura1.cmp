@@ -1,0 +1,6 @@
+<aura:component controller="theorgurl" implements="force:lightningQuickAction" >
+	<aura:attribute name="Host" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   
+</aura:component>

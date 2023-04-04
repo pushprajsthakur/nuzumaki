@@ -1,0 +1,6 @@
+@import 'c/cssLibrary';
+
+.css{
+    width:70%;
+    background-color: rgb(43, 156, 190);
+}

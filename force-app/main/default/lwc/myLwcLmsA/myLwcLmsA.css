@@ -1,0 +1,15 @@
+.myclass {
+    overflow-y: scroll; /* Tells the browser to treat `overflow` content as scrollable */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.myclass::-webkit-scrollbar {
+     display: none; /* WebKit browsers, like Chrome and Safari */
+}
+
+.myblur {
+    /* opacity: -4;
+    z-index: -1; */
+    background-color: transparent;
+}

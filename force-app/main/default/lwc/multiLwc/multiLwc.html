@@ -1,0 +1,23 @@
+<template>
+    <lightning-record-edit-form record-id={recordId} object-api-name="Opportunity" onsuccess={handleSuccess} onsubmit={handleSubmit} onerror={handleError}>
+    
+    <lightning-input-field field-name="Name"></lightning-input-field>
+    <lightning-input-field field-name="Thematic__c" onchange={handleChange}></lightning-input-field>
+    <template if:true={showDemo}>
+        <lightning-input-field field-name="Democracy__c" name="Democra" onchange={handleCalculation}></lightning-input-field>
+    </template>
+    <template if:true={showDis}>
+        <lightning-input-field field-name="Disaster__c" name="Disas" onchange={handleCalculation}></lightning-input-field>
+    </template>
+    <template if:true={showEdu}>
+        <lightning-input-field field-name="Education__c" name="Educa" onchange={handleCalculation}></lightning-input-field>
+    </template>
+    <template if:true={showEnv}>
+        <lightning-input-field field-name="Environment__c" name="Environ" onchange={handleCalculation}></lightning-input-field>
+    </template>
+    <template if:true={showLab}>
+        <lightning-input-field field-name="Labor__c" name="Labo" onchange={handleCalculation}></lightning-input-field>
+    </template>
+    <lightning-input-field  field-name="Total__c" value={totalValue}></lightning-input-field>
+</lightning-record-edit-form>
+</template>

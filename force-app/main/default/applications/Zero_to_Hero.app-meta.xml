@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Zero to Hero</label>
+    <navType>Standard</navType>
+    <tabs>Gantt_Chart</tabs>
+    <tabs>Custom_Carousal</tabs>
+    <tabs>Timeline_Chart</tabs>
+    <tabs>org_tree_two</tabs>
+    <tabs>tree</tabs>
+    <tabs>Org_Chart</tabs>
+    <tabs>Full_Calendar</tabs>
+    <tabs>Lwc_Fundamentals</tabs>
+    <tabs>weatherApp</tabs>
+    <tabs>Pagination</tabs>
+    <tabs>MyChart</tabs>
+    <tabs>Map_in_Lwc</tabs>
+    <tabs>Book_Listing_App</tabs>
+    <tabs>Apex_In_Lwc</tabs>
+    <tabs>CRUD_uiRecordApi</tabs>
+    <tabs>Wire_Service</tabs>
+    <tabs>Base_Component</tabs>
+    <tabs>Notification</tabs>
+    <tabs>Static_Resource_Context_Toast</tabs>
+    <tabs>Lightning_Messaging_Service</tabs>
+    <tabs>LifeCycleComponent</tabs>
+    <tabs>Component_Communication</tabs>
+    <tabs>Association__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Zero_to_Hero_UtilityBar</utilityBar>
+</CustomApplication>

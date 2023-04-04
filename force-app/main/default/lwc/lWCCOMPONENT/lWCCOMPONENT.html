@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="calling child method from parent">
+        <div class="slds-var-m-around_medium">
+           
+
+    <!-- <template for:each={sliderData} for:item="item" >
+        <lightning-slider
+        class="new" key={item.serial} label="Volume" value={item.val} onchange={changeHandler}></lightning-slider>
+
+    </template> -->
+     <lightning-slider name="newlist1" class="slidercls"
+        label="Volume" value={value1} onchange={changeHandler} ></lightning-slider>
+   <lightning-slider name="newlist2" class="slidercls"
+    label="Volume" value={value2} onchange={changeHandler} ></lightning-slider>
+    <lightning-slider name="newlist3" class="slidercls"
+    label="Volume" value={value3} onchange={changeHandler} ></lightning-slider>
+   
+    <div data-id="myDiv" class={currentcolor}>Sum is:{sum}</div>
+   
+
+</div>
+       
+    </lightning-card>   
+
+   
+    
+</template>

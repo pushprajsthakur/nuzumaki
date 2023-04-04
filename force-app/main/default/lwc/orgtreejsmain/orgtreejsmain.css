@@ -1,0 +1,38 @@
+rect{
+    fill: white;
+    stroke: blue;
+    width: 110px;
+    height: 55px;
+    stroke-width: 2;
+    /* inline-size: 40px; */
+    
+
+}
+path{
+    fill:none;
+    stroke: green;
+    stroke-width: 2;
+    
+}
+text{
+    dominant-baseline: middle;
+    text-anchor: middle;
+   
+
+}
+.myscroll{
+    overflow: auto;
+}
+/* .bigger{
+    /* font-size: 15px; */
+    /* font-family: "Times New Roman", Times, serif; */
+    /* text-shadow:1px 1px 0 #444; */
+
+/* } */
+ /* */ 
+/* svg text {
+    pointer-events: none;
+}
+.svg .text {
+    pointer-events: none;
+} */

@@ -1,0 +1,47 @@
+<template>
+
+    <div class="slds-size_medium">
+    <lightning-card title="Weather" class="--slds-c-card-shadow">
+        <div class="slds-var-p-around_medium">
+
+            <lightning-input placeholder="Enter City Name">
+            </lightning-input>
+            <lightning-button class="button" variant="brand"
+                label="Weather" onclick={updateQuery}>
+            </lightning-button>
+            <template if:true={errormsg}>
+                <p style="color: red;">{errormsg}!!!</p>
+            </template> 
+           
+        <template if:true={cityWeather}>
+            <div class="slds-box slds-var-p-around_medium">
+
+                <p class=""><strong>{cityname}</strong></p>
+
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                      <span> <img src={icon}> 
+                {tempis} &deg; {des}</span>
+                    </div>
+                    <div class="slds-col">
+                      <span></span>
+                    </div>
+                    <div class="slds-col">
+                      <span><p></p></span>
+                    </div>
+                  </div>
+                
+                <p><strong>Temprature Max: </strong>{temp_maxis}</p>
+                <p><strong>Temprature Min: </strong>{temp_minis}</p>
+                
+              
+
+            </div>
+
+            </template>
+           
+       
+    </div>
+    </lightning-card>
+</div>
+</template>

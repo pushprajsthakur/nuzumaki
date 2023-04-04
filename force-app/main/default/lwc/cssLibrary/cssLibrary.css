@@ -1,0 +1,11 @@
+.wrapper {
+    width: 100%;
+    background-color: pink;
+
+}
+.skills{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(211, 24, 24);
+}

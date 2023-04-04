@@ -1,0 +1,21 @@
+.redColor
+{
+    background-color: red;
+    color: white;
+}
+.yellowColor
+{
+    background-color: rgb(223, 209, 15);
+    color: white;
+}
+.blueColor
+{
+    background-color: rgb(9, 255, 0);
+    color: white;
+}
+.baseColor
+{ 
+ background-color:black;
+  color:whitesmoke;
+
+}

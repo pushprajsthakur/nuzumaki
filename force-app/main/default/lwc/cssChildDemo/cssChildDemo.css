@@ -1,0 +1,10 @@
+:host{
+    display: block;
+    background-color: yellow;
+    color: red;
+}
+:host(.blue){
+    display: block;
+    background-color: yellow;
+    color: blue;
+}

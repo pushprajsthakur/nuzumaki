@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="GET OBJECT INFO DEMO">
+      <template if:true={objectInfo.data}>
+        <div class="slds-var-p-around_medium">{objectInfo.data.defaultRecordTypeId}</div>
+      </template> 
+    </lightning-card>
+    <lightning-card title="GET OBJECT INFO DEMO">
+       <div class="slds-var-p-around_medium">
+           <template if:true={objectInfos}>
+
+               <template for:each={objectInfos.results} for:item="obj">
+                   <div key={obj.result.apiName}> 
+                    <div>Object API NAME IS:  {obj.result.apiName}</div>
+                    <div>Object defaultRecordTypeId:  {obj.result.defaultRecordTypeId}</div>
+                   </div>
+               </template>
+           </template>
+       </div>
+      </lightning-card>
+</template>

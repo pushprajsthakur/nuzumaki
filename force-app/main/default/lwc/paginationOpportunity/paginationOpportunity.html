@@ -1,0 +1,84 @@
+<template>
+
+    <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+         
+     <div class="slds-modal__header slds-box slds-theme_shade slds-theme_alert-texture">
+       <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">
+           
+
+        <div class="slds-grid slds-gutters">
+          <div class="slds-col">
+            <span>
+              <strong>{name}</strong> 
+            </span>
+        
+          </div>
+          <div class="slds-col">
+            <span> <lightning-formatted-date-time
+              value={start}
+              year="numeric"
+              day="2-digit"
+              month="long"
+              time-zone="UTC"
+          >
+          </lightning-formatted-date-time></span>
+             
+          </div>
+          </div>
+
+             
+             
+            </h1>
+          </div>
+          <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1">
+            <lightning-card >
+                <div class="slds-var-p-around_medium">
+                    <lightning-record-edit-form
+                    object-api-name={objectName}
+                    record-id="0065i000004XmHHAA0">
+        
+                <template if:true={firstPage} >
+        
+                    <lightning-input-field field-name={fieldsDisplay.amountField}></lightning-input-field>
+                    <lightning-input-field field-name={fieldsDisplay.educationField}></lightning-input-field>
+        
+                </template>   
+                <template if:true={secondPage} >
+                <lightning-input-field field-name={fieldsDisplay.disaterField}></lightning-input-field>
+                <lightning-input-field field-name={fieldsDisplay.democracyField}></lightning-input-field>
+            </template>
+            <template if:true={thirdPage} >
+                <lightning-input-field field-name={fieldsDisplay.closeDateField}></lightning-input-field>
+            </template>
+              
+               <lightning-button variant="brand-outline" disabled={disablePrevious} onclick={previousHandler} icon-name="utility:chevronleft" class="slds-var-m-around_medium" label="Previous"></lightning-button>
+        
+                    
+                <lightning-button onclick={nextHandler} disabled={disableNext} icon-name="utility:chevronright" variant="brand-outline" class="slds-var-m-around_medium" label="Next"></lightning-button>
+                <div class="slds-float_right">
+                <lightning-button onclick={recordViewMode}  variant="destructive" class="slds-var-m-around_medium" label="Cancel"></lightning-button>
+            </div>
+                <template if:false={disableSubmit}>
+                <div class="slds-float_right">
+                <lightning-button  variant="brand" type="submit" class="slds-var-m-around_medium" label="Submit" onclick={recordViewMode}></lightning-button>
+                  </div>      
+                </template>
+            </lightning-record-edit-form>
+                   
+        
+                </div>
+            </lightning-card>
+          </div>
+         
+        </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+
+
+
+
+
+
+    
+    </template>

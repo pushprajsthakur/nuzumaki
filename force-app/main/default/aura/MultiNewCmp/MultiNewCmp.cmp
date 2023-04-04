@@ -1,0 +1,18 @@
+<aura:component implements="force:lightningQuickAction,lightning:actionOverride,flexipage:availableForRecordHome">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div aura:id="editDialog" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open slds-modal_medium">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+                <h2 class="slds-text-heading--medium">New Record</h2>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium">
+                <c:multiLwc aura:id="editCmp"></c:multiLwc>
+            </div>
+            <div class="slds-modal__footer">                
+                <lightning:button variant="neutral" label="Cancel" onclick="{!c.closeScreen}" />
+                <lightning:button variant="brand" label="Submit" onclick="{!c.saveRecord}" />
+            </div>
+        </div>
+    </div>
+    <div aura:id="overlay" class="slds-backdrop slds-backdrop_open"></div>
+</aura:component>
